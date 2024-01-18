@@ -18,6 +18,10 @@ module.exports = () => {
       new HtmlWebpackPlugin({
       template: './index.html',
     }),
+      new InjectManifest(),
+      new WebpackPwaManifest({
+      template: './manifest.json',
+    }),
     
     ],
 
